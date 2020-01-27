@@ -18,6 +18,10 @@
     .btn-myclass {}
 
     .card-myclass {}
+
+    .card {
+      top: 1rem;
+    }
   </style>
 </head>
 
@@ -60,7 +64,7 @@
       <div class="col-md-3 col-11 text-center position-relative">
         <img src="https://picsum.photos/300/300" class="img-fluid rounded-circle mt-5 mb-5" alt="" width="auto"
           height="auto">
-        <div class="card position-absolute card-myclass fixed-bottom" style="width: 100%">
+        <div class="card card-myclass" style="width: 100%">
           <div class="card-body text-center position-relative">First Item dolor sit amet
             consectetur adipisicing
             elit. Aliquid a cum
@@ -91,7 +95,10 @@
             cum
             porro, minima
             veniam ratione<br>
-            <a href="#" class="btn btn-primary position-absolute btn-myclass">This Button</a>
+            <p class="text-center">
+
+              <a href="#" class="btn btn-primary position-absolute btn-myclass">This Button</a>
+            </p>
           </div>
         </div>
       </div>
@@ -100,8 +107,9 @@
       </div>
     </div>
 
-    <div class="row bg-secondary">
-      <div class="col-12">
+    <div class="row">
+      <div class="col-12 py-5"></div>
+      <div class="col-12 bg-secondary">
         <br>
       </div>
     </div>
