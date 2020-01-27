@@ -14,6 +14,10 @@
       background-image: url(https://c4.wallpaperflare.com/wallpaper/745/146/375/gray-diagonal-background-wallpaper-preview.jpg);
       background-size: cover;
     }
+
+    .btn-myclass {}
+
+    .card-myclass {}
   </style>
 </head>
 
@@ -23,17 +27,24 @@
 
   <div class="container-fluid">
     <div class="row bg-image">
-      <div class="">transparent navbar header</div>
-      <div class="row p-3 justify-content-around">
+      <div class="col-12">
+        <div class="row justify-content-between">
+          <div class="col-3">
+            <nav class="navbar">
 
+            </nav>
+            navbar left
+          </div>
+          <div class="col-8 text-right"> navbar right</div>
+        </div>
+      </div>
+
+
+      <div class="row p-3 justify-content-around">
         <div class="col-11 col-md-5 order-md-2 order-1 embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=GHhFtkGfaWU"
             allowfullscreen></iframe>
         </div>
-
-
-
-
         <div class=" col-11 col-md-5 order-md-1 order-2">
           written content and rounded button Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum,
           tempore nihil amet reprehenderit error natus adipisci aliquid in dolorum neque quidem, nemo sit facere
@@ -46,39 +57,46 @@
 
 
     <div class="row bg-warning d-flex justify-content-around align-items-center">
-      <div class="col-md-3 col-11 text-center">
+      <div class="col-md-3 col-11 text-center position-relative">
         <img src="https://picsum.photos/300/300" class="img-fluid rounded-circle mt-5 mb-5" alt="" width="auto"
           height="auto">
-        <div class="card" style="width: 100%">
-          <div class="card-body text-center pb-0">First Item dolor sit amet consectetur adipisicing elit. Aliquid a cum
+        <div class="card position-absolute card-myclass fixed-bottom" style="width: 100%">
+          <div class="card-body text-center position-relative">First Item dolor sit amet
+            consectetur adipisicing
+            elit. Aliquid a cum
             porro, minima
             veniam ratione<br>
-            <a href="#" class="btn btn-primary">This Button</a>
+            <a href="#" class="btn btn-primary position-absolute btn-myclass">This Button</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-11 text-center">
+      <div class="col-md-3 col-11 text-center position-relative">
         <img src="https://picsum.photos/300/300" class="img-fluid rounded-circle mt-5 mb-5" alt="" width="auto"
           height="auto">
-        <div class="card" style="width: 100%">
-          <div class="card-body text-center pb-0">Second Item dolor sit amet consectetur adipisicing elit. Aliquid a cum
+        <div class="card position-absolute card-myclass fixed-bottom" style="width: 100%">
+          <div class="card-body text-center position-relative">Second Item dolor sit amet consectetur adipisicing
+            elit. Aliquid a cum
             porro, minima
             veniam ratione <br>
-            <a href="#" class="btn btn-primary">This Button</a>
+            <a href="#" class="btn btn-primary position-absolute btn-myclass">This Button</a>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-11 text-center">
+      <div class="col-md-3 col-11 text-center position-relative">
         <img src="https://picsum.photos/300/300" class="img-fluid rounded-circle mt-5 mb-5" alt="" width="auto"
           height="auto">
-        <div class="card" style="width: 100%">
-          <div class="card-body text-center pb-0">Third Item dolor sit amet consectetur adipisicing elit. Aliquid a
+        <div class="card position-absolute card-myclass fixed-bottom" style="width: 100%">
+          <div class="card-body text-center position-relative">Third Item dolor sit amet consectetur adipisicing
+            elit. Aliquid a
             cum
             porro, minima
             veniam ratione<br>
-            <a href="#" class="btn btn-primary">This Button</a>
+            <a href="#" class="btn btn-primary position-absolute btn-myclass">This Button</a>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-12"><br></div>
       </div>
     </div>
 
@@ -115,6 +133,15 @@
 
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
 
 </body>
